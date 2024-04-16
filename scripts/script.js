@@ -21,15 +21,8 @@ squareBody.addEventListener('click', (e) => {
                     blocks[index + 1].before(blocks[index - 5]);
                 }
                 if (targetArrow.classList.contains('bottom') && (index + 5) < blocks.length) {
-                    /* const elem1 = blocks[index];
-                    const elem2 = blocks[index + 5];                    
-                    elem2.after(elem1);
-                    blocks[index-1].after(elem2); */   
                     blocks[index + 5].after(blocks[index]);
-                    blocks[index - 1].after(blocks[index+5]);
-                    
-
-
+                    blocks[index - 1].after(blocks[index+5]);                     
                 }
             }
         });
